@@ -1,0 +1,16 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Sayid\workspace\Thesis\multi-spin\monitor\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5170 bytes. 0x2e90 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Building C object CMakeFiles/monitor.elf.dir/project_elf_src_esp32c3.c.obj
+[6/8] Linking CXX executable monitor.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/build/monitor.bin
+[8/8] cmd.exe /C "cd /D C:\Users\Sayid\workspace\Thesis\multi-spin\monitor\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/build/partition_table/partition-table.bin C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/build/monitor.bin"
+monitor.bin binary size 0xc1f30 bytes. Smallest app partition is 0x100000 bytes. 0x3e0d0 bytes (24%) free.

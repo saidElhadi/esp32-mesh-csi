@@ -1,0 +1,973 @@
+[0;32mI (114883) node: Received ESP-NOW message from 1a:00:00:0ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403848b2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (223) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (232) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (244) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (265) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (271) cpu_start: ELF file SHA256:  962e1f7ba...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (282) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (352) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (530) wifi:mode : sta (1a:00:00:00:00:00)
+I (530) wifi:enable tsf
+[0;32mI (533) node: Connecting to Wi-Fi...[0m
+[0;32mI (534) node: Assigned MAC address: 1a:00:00:00:00:00[0m
+I (535) ESPNOW: espnow [version: 1.0] init
+I (538) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (546) wifi:state: init -> auth (b0)
+I (550) wifi:state: auth -> assoc (0)
+I (554) wifi:Association refused temporarily, comeback time 1500 (TUs)
+[0;32mI (609) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (610) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (707) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (707) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (817) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (818) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (907) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (907) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (1007) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (1007) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (1107) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 1[0m
+[0;32mI (1107) node: Node 0 received disable CSI command from Node 255[0m
+[0;32mI (1173) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (1173) node: Node 0 enabling CSI to receive from Node 2[0m
+[0;32mI (1290) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (1290) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (1390) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (1391) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (1490) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (1490) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (1590) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (1591) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (1690) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (1690) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (1790) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (1790) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (1892) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (1893) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (1992) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (1993) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (2090) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (2090) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+I (2094) wifi:state: assoc -> assoc (0)
+[0;32mI (2102) node: CSI callback invoked, data length: 128, mac: 64:e8:33:89:f9:11, RSSI: -18[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x00000083  S7      : 0x00000080  
+S8      : 0x3fca7560  S9      : 0x3fca2794  S10     : 0x00000080  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fca09e0: 0x3fca09ec 0x00000000 0x3c0af93c 0x4038d5ee 0x3fc93444 0x3c0af93c 0x3fc93b74 0x3c0a2032
+3fca0a00: 0x3fc93454 0x3fca0a14 0x3fc93458 0x3c0a20a8 0x3fc93724 0x00363339 0x00000001 0x65737361
+3fca0a20: 0x66207472 0x656c6961 0x78203a64 0x75657551 0x6e654765 0x63697265 0x646e6553 0x65757120
+3fca0a40: 0x632e6575 0x3633393a 0x78702820 0x75657551 0x00002965 0x00000000 0x00000020 0x34393032
+3fca0a60: 0xffffffff 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x3fc990a8 0x40386298
+3fca0a80: 0x3fc80f20 0x00000000 0x3b09c135 0x00000000 0x00000003 0x3c0a4890 0x00000003 0x3c0a4890
+3fca0aa0: 0x3c0a4924 0x3fca0b3c 0x3c0a4890 0x3fca0b3c 0x3c0a4924 0x3c0a4890 0x3c0a4890 0x00000000
+3fca0ac0: 0x00000080 0x3fca2794 0x3fca7560 0x00000080 0x00000083 0x3fc97948 0x3fce0000 0x3fca0b3c
+3fca0ae0: 0x3c0a4924 0x00000000 0x00000000 0x42000000 0x0000082e 0x00000000 0x3fce0000 0x3fca0b78
+3fca0b00: 0x3fca2794 0x00000000 0x00000000 0x40386202 0x3c0ad37c 0x00000000 0x403837ec 0x00000000
+3fca0b20: 0x3c0ad37c 0x00000000 0x3fc990a8 0x42007ec8 0x00000000 0x00000000 0x3fc990a8 0x00000000
+3fca0b40: 0x3fca2794 0x3fca27c4 0x3fca9258 0x42007f20 0x00000033 0x00000089 0x000000f9 0x00000011
+3fca0b60: 0xffffffee 0x00000000 0x3fc990a8 0x3fca0bfc 0x3c0acecc 0x3c0aaa58 0x00000000 0x00000000
+3fca0b80: 0x00202ab5 0x00000000 0x00000080 0x00000000 0x00000000 0x040f0000 0x040e040f 0x040e040e
+3fca0ba0: 0x030d030e 0x030d030d 0x020d020d 0x020d020d 0x010d010d 0x000d000d 0x000d000d 0xff0dff0d
+3fca0bc0: 0xff0dff0d 0xfe0dfe0d 0x0000fe0d 0xfe0dfe0d 0xff0dff0d 0xff0dff0d 0xff0dff0d 0x000dff0d
+3fca0be0: 0x000d000d 0x010c010c 0x010c010c 0x020b010b 0x020b020b 0x030b030b 0x040a030a 0x06090509
+3fca0c00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0c20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0c40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0c60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0c80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0ca0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0cc0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0ce0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fc9eddc 0x00000000 0x3fca9258 0x4206091c
+3fca0da0: 0x3fca0ed4 0x00000004 0x3fca2734 0x00000fff 0x00201647 0x3fca2fb8 0x3fca7534 0x00000080
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2fb8 0x4038fd42 0x3ff1b000 0x3fce0000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 962e1f7ba
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (232) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (271) cpu_start: ELF file SHA256:  962e1f7ba...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (522) wifi:mode : sta (1a:00:00:00:00:00)
+I (523) wifi:enable tsf
+[0;32mI (526) node: Connecting to Wi-Fi...[0m
+[0;32mI (526) node: Assigned MAC address: 1a:00:00:00:00:00[0m
+I (528) ESPNOW: espnow [version: 1.0] init
+I (533) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (538) wifi:state: init -> auth (b0)
+I (542) wifi:state: auth -> assoc (0)
+I (549) wifi:state: assoc -> run (10)
+I (563) wifi:connected with your_ssid, aid = 2, channel 11, 40D, bssid = 64:e8:33:89:f9:11
+I (563) wifi:security: WPA2-PSK, phy: bgn, rssi: -17
+I (566) wifi:pm start, type: 1
+
+I (568) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (576) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (584) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (592) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (612) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (613) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (711) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (712) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (811) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (812) node: Node 0 received disable CSI command from Node 255[0m
+[0;32mI (827) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (827) node: Node 0 is now the broadcaster[0m
+[0;32mI (1599) esp_netif_handlers: sta ip: 192.168.4.3, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (1600) node: Got IP Address: 192.168.4.3[0m
+[0;32mI (1602) node: UDP socket created successfully[0m
+[0;32mI (1607) node: Node 0 is broadcasting...[0m
+[0;32mI (1612) node: Node 0 informed Node 1 to enable CSI[0m
+[0;32mI (1613) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (1625) node: Node 0 informed Node 2 to enable CSI[0m
+[0;32mI (1626) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (1739) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (1740) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (1839) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (1840) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (1939) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (1940) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2040) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2041) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2139) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2140) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2239) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2240) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2340) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2341) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2439) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2440) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2539) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2540) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2639) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2640) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2739) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2740) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2839) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2840) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2939) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2940) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3039) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3042) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3139) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3140) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3239) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3240) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3339) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3342) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3445) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3448) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3539) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3540) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3641) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3651) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3738) node: Node 0 informed Node 1 to disable CSI[0m
+[0;32mI (3738) node: Node 0 informed Node 2 to disable CSI[0m
+[0;32mI (3739) node: Node 0 passed token to Node 1[0m
+[0;32mI (3739) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3751) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3758) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3856) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 1[0m
+[0;32mI (3857) node: Node 0 enabling CSI to receive from Node 1[0m
+[0;32mI (3976) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (3976) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4076) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4076) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4176) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4176) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4276) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4276) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4376) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4376) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4476) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4477) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4577) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4577) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4676) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4676) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4776) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4776) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4876) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4876) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4976) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4976) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5076) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5076) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5176) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5176) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5276) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5277) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5376) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5376) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5476) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5477) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5576) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5577) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5676) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5676) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5776) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5776) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5876) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5876) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5976) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 1[0m
+[0;32mI (5977) node: Node 0 received disable CSI command from Node 255[0m
+I (5983) wifi:starting SA query procedure with AP(64:e8:33:89:f9:11)
+I (5986) wifi:Send SA Query req with transaction id ad23
+[0;32mI (6041) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (6041) node: Node 0 enabling CSI to receive from Node 2[0m
+[0;32mI (6161) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6161) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+I (6186) wifi:Send SA Query req with transaction id ad24
+[0;32mI (6261) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6261) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6360) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6360) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+I (6386) wifi:Send SA Query req with transaction id ad25
+[0;32mI (6461) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6461) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6560) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6561) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+I (6586) wifi:Send SA Query req with transaction id ad26
+[0;32mI (6660) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6661) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6760) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6761) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+I (6786) wifi:Send SA Query req with transaction id ad27
+[0;32mI (6860) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6861) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6960) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6961) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+I (6986) wifi:Send SA Query req with transaction id ad28
+I (7010) wifi:No response to 6 SA Queries, reset connection sending disassoc
+I (7010) wifi:state: run -> init (d100)
+I (7011) wifi:pm stop, total sleep time: 0 us / 6443228 us
+
+I (7015) wifi:new:<11,0>, old:<11,2>, ap:<255,255>, sta:<11,2>, prof:1
+[0;32mI (7023) node: Disconnected from Wi-Fi, retrying...[0m
+I (7033) wifi:new:<11,2>, old:<11,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (7034) wifi:state: init -> auth (b0)
+I (7038) wifi:state: auth -> assoc (0)
+[0;32mI (7047) node: CSI callback invoked, data length: 128, mac: 64:e8:33:89:f9:11, RSSI: -11[0m
+[0;32mI (7049) node: CSI data enqueued[0m
+[0;32mI (7053) node: CSI callback invoked, data length: 128, mac: 64:e8:33:89:f9:11, RSSI: -12[0m
+[0;32mI (7061) node: CSI data enqueued[0m
+I (7065) wifi:state: assoc -> run (10)
+[0;32mI (7071) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7077) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7084) node: Node 0 sending CSI data[0m
+Guru Meditation Error: Core  0 panic'ed (Stack protection fault). 
+
+Detected in task "main" at 0x40380158
+Stack pointer: 0x3fc94c40
+Stack bounds: 0x3fc94640 - 0x3fc94c40
+
+
+Core  0 register dump:
+MEPC    : 0x403801da  RA      : 0x403801a2  SP      : 0x3fc94c40  GP      : 0x3fc92000  
+TP      : 0x3fc7b330  T0      : 0x600c2194  T1      : 0x600c2130  T2      : 0x00000002  
+S0/FP   : 0x3fc9a758  S1      : 0x80000007  A0      : 0x600ce000  A1      : 0x00000300  
+A2      : 0x600ce000  A3      : 0x0000002d  A4      : 0x3fc9a839  A5      : 0x000007d5  
+A6      : 0xa0000000  A7      : 0x0000000a  S2      : 0x00001881  S3      : 0x00000001  
+S4      : 0x3fc9b33c  S5      : 0x3fc9a839  S6      : 0x3fc9a3ac  S7      : 0x3fc9a3e4  
+S8      : 0x00000003  S9      : 0x00000002  S10     : 0x00000001  S11     : 0x00000000  
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x0000001b  MTVAL   : 0x0000850a  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc94c40: 0x60023000 0x4038570c 0x40385718 0x00000000 0x3fc94c4c 0x00000000 0x00000000 0x00000000
+3fc94c60: 0x3fc94c64 0xffffffff 0x3fc94c64 0x3fc94c64 0x00000000 0x3fc94c78 0xffffffff 0x3fc94c78
+3fc94c80: 0x3fc94c78 0x00000001 0x00000001 0x00000000 0x0001ffff 0x00000000 0x00000000 0x00000000
+3fc94ca0: 0x00000000 0x3fc94ca0 0x00000000 0x00000000 0x00000000 0x3fc94cb8 0xffffffff 0x3fc94cb8
+3fc94cc0: 0x3fc94cb8 0x00000000 0x3fc94ccc 0xffffffff 0x3fc94ccc 0x3fc94ccc 0x00000001 0x00000001
+3fc94ce0: 0x00000000 0x0001ffff 0x00000000 0x00000000 0x00000000 0x60023000 0x4038570c 0x40385718
+3fc94d00: 0x3fc9884c 0x3fc98910 0x3fc989d4 0x3fc9c3ec 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94d20: 0x00000000 0x00000000 0x4038347c 0x00000000 0x403811b8 0x00000000 0x40381b84 0x00000000
+3fc94d40: 0x40383078 0x3fc981cc 0x00000000 0x00000000 0x00000000 0x00000000 0x403871d2 0x3fc94c40
+3fc94d60: 0x00000000 0x00000000 0x4200c13a 0x00000000 0x4038336a 0x00000000 0x00000000 0x00000000
+3fc94d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94da0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94dc0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94de0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94e00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94e20: 0x00000001 0x00000009 0x00000000 0x00800000 0x00800000 0x000d0000 0x00730000 0x0000001b
+3fc94e40: 0x00000001 0x3fc9bd84 0x3fc9bdd8 0x40383166 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94e60: 0x00000000 0x00000000 0x00000000 0x4200c000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94e80: 0x00000000 0x00000000 0x00000000 0x00000001 0x6001f000 0x3fc9a2c0 0x00000000 0x00000000
+3fc94ea0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x0000069c 0x3fc9edb4 0x3fca1c94
+3fc94ec0: 0x00000002 0x3fca9588 0x00000000 0x00010000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94ee0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94f00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94f20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94f40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94f60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94f80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94fa0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94fc0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc94fe0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc95000: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc95020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 962e1f7ba
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  962e1f7ba...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (537) wifi:mode : sta (1a:00:00:00:00:00)
+I (538) wifi:enable tsf
+[0;32mI (541) node: Connecting to Wi-Fi...[0m
+[0;32mI (542) node: Assigned MAC address: 1a:00:00:00:00:00[0m
+I (543) ESPNOW: espnow [version: 1.0] init
+I (546) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (553) wifi:state: init -> auth (b0)
+I (559) wifi:state: auth -> assoc (0)
+I (566) wifi:state: assoc -> run (10)
+I (580) wifi:connected with your_ssid, aid = 1, channel 11, 40D, bssid = 64:e8:33:89:f9:11
+I (580) wifi:security: WPA2-PSK, phy: bgn, rssi: -21
+I (583) wifi:pm start, type: 1
+
+I (585) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (593) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+[0;32mI (601) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (609) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+I (616) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (624) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (692) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (693) node: Node 0 received disable CSI command from Node 255[0m
+[0;32mI (701) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (704) node: Node 0 is now the broadcaster[0m
+[0;32mI (1631) esp_netif_handlers: sta ip: 192.168.4.3, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (1632) node: Got IP Address: 192.168.4.3[0m
+[0;32mI (1635) node: UDP socket created successfully[0m
+[0;32mI (1639) node: Node 0 is broadcasting...[0m
+[0;32mI (1644) node: Node 0 informed Node 1 to enable CSI[0m
+[0;32mI (1645) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (1657) node: Node 0 informed Node 2 to enable CSI[0m
+[0;32mI (1658) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (1771) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (1772) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (1870) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (1874) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (1970) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (1971) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2070) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2071) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2170) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2171) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2270) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2271) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2370) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2371) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2470) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2471) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2572) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2576) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2670) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2671) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2770) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2771) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2870) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2871) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (2970) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (2971) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3070) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3071) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3170) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3171) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3270) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3273) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3370) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3371) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3470) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3471) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3572) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3573) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3670) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3671) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3769) node: Node 0 informed Node 1 to disable CSI[0m
+[0;32mI (3769) node: Node 0 informed Node 2 to disable CSI[0m
+[0;32mI (3770) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3777) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (3784) node: Node 0 passed token to Node 1[0m
+[0;32mI (3785) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (3868) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 1[0m
+[0;32mI (3868) node: Node 0 enabling CSI to receive from Node 1[0m
+[0;32mI (3986) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (3987) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4086) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4087) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4186) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4187) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4286) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4287) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4386) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4387) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4488) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4489) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4586) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4587) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4686) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4687) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4786) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4787) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4886) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4887) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (4986) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (4987) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5087) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5088) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5186) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5187) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5286) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5287) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5387) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5388) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5486) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5487) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5586) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5587) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5687) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5687) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5787) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5788) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5886) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (5887) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (5990) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 1[0m
+[0;32mI (5990) node: Node 0 received disable CSI command from Node 255[0m
+[0;32mI (6121) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (6121) node: Node 0 enabling CSI to receive from Node 2[0m
+[0;32mI (6242) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6243) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6340) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6341) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6440) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6441) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6540) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6541) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6641) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6641) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6740) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6741) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6841) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6841) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (6940) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (6941) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7040) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7041) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7140) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7141) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7240) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7241) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7341) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7341) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7440) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7441) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7541) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7541) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7640) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7641) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7740) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7741) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7840) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7841) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (7941) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (7941) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (8041) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (8041) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (8140) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (8141) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (8242) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (8242) node: Node 0 received disable CSI command from Node 255[0m
+[0;32mI (8254) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (8255) node: Node 0 is now the broadcaster[0m
+[0;32mI (8396) node: Node 0 is broadcasting...[0m
+[0;32mI (8396) node: Node 0 informed Node 1 to enable CSI[0m
+[0;32mI (8396) node: Node 0 informed Node 2 to enable CSI[0m
+[0;32mI (8397) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (8408) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (8516) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (8518) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (8617) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (8618) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (8716) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (8717) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (8819) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (8820) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (8916) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (8917) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9016) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9017) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9116) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9117) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9216) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9217) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9316) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9317) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9416) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9417) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9518) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9519) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9616) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9617) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9716) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9717) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9816) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9817) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (9916) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (9917) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (10017) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (10020) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (10116) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (10117) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (10217) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (10222) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (10316) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (10317) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (10416) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (10417) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (10515) node: Node 0 informed Node 1 to disable CSI[0m
+[0;32mI (10515) node: Node 0 informed Node 2 to disable CSI[0m
+[0;32mI (10516) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (10523) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (10530) node: Node 0 passed token to Node 1[0m
+[0;32mI (10533) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (10614) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 1[0m
+[0;32mI (10614) node: Node 0 enabling CSI to receive from Node 1[0m
+[0;32mI (10733) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (10733) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (10833) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (10833) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (10933) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (10933) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11033) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11033) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11133) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11133) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11240) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11240) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11338) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11338) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11435) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11435) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11534) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11534) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11633) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11633) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11733) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11733) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11834) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11835) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (11933) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (11933) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (12033) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (12033) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (12133) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (12133) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (12237) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (12237) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (12333) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (12333) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (12433) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (12433) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (12533) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (12533) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (12633) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (12633) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (12733) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 1[0m
+[0;32mI (12733) node: Node 0 received disable CSI command from Node 255[0m
+[0;32mI (12869) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (12869) node: Node 0 enabling CSI to receive from Node 2[0m
+[0;32mI (12989) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (12989) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13089) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13089) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13189) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13189) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13289) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13289) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13389) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13389) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13490) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13490) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13589) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13589) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13689) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13689) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13789) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13789) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13889) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13889) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (13989) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (13989) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14089) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (14089) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14189) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (14189) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14289) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (14289) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14389) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (14389) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14489) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (14489) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14589) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (14589) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14689) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (14689) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14789) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (14789) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14889) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (14889) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (14989) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (14989) node: Node 0 received disable CSI command from Node 255[0m
+[0;32mI (15002) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (15002) node: Node 0 is now the broadcaster[0m
+[0;32mI (15144) node: Node 0 is broadcasting...[0m
+[0;32mI (15144) node: Node 0 informed Node 1 to enable CSI[0m
+[0;32mI (15145) node: Node 0 informed Node 2 to enable CSI[0m
+[0;32mI (15146) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (15158) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (15257) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (15258) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (15363) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (15364) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (15458) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (15459) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (15558) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (15559) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (15657) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (15658) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (15757) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (15758) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (15857) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (15858) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (15957) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (15958) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16057) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16058) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16157) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16158) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16257) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16258) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16357) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16358) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16457) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16458) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16557) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16558) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16657) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16658) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16757) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16758) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16857) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16858) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (16957) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (16958) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (17057) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (17058) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (17157) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (17158) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (17256) node: Node 0 informed Node 1 to disable CSI[0m
+[0;32mI (17256) node: Node 0 informed Node 2 to disable CSI[0m
+[0;32mI (17257) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (17264) node: ESP-NOW send callback, mac: 1a:00:00:00:00:02, status: 0[0m
+[0;32mI (17271) node: Node 0 passed token to Node 1[0m
+[0;32mI (17273) node: ESP-NOW send callback, mac: 1a:00:00:00:00:01, status: 0[0m
+[0;32mI (17364) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 1[0m
+[0;32mI (17364) node: Node 0 enabling CSI to receive from Node 1[0m
+[0;32mI (17482) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (17482) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (17582) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (17582) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (17682) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (17682) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (17782) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (17782) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (17882) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (17882) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (17982) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (17982) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18082) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18082) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18182) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18182) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18287) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18287) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18382) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18382) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18482) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18482) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18582) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18582) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18682) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18682) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18783) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18784) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18882) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18882) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (18982) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (18982) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (19082) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (19082) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (19182) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (19183) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (19283) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (19283) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (19383) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 10[0m
+[0;31mE (19383) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:01: 10[0m
+[0;32mI (19482) node: Received ESP-NOW message from 1a:00:00:00:00:01 with length 1[0m
+[0;32mI (19482) node: Node 0 received disable CSI command from Node 255[0m
+[0;32mI (19617) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 1[0m
+[0;32mI (19617) node: Node 0 enabling CSI to receive from Node 2[0m
+[0;32mI (19737) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (19737) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (19837) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (19837) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (19937) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (19937) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (20037) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (20037) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m
+[0;32mI (20137) node: Received ESP-NOW message from 1a:00:00:00:00:02 with length 10[0m
+[0;31mE (20137) node: Unexpected ESP-NOW data length from 1a:00:00:00:00:02: 10[0m

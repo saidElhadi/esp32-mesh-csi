@@ -1,0 +1,136 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403848b2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=20040h (131136) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=00030068 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b20 vaddr=40380000 size=0d4f8h ( 54520) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=911c0h (594368) map[0m
+[0;32mI (223) esp_image: segment 4: paddr=000d11e8 vaddr=4038d4f8 size=042c8h ( 17096) load[0m
+[0;32mI (232) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (244) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (253) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (261) cpu_start: App version:      1[0m
+[0;32mI (265) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (271) cpu_start: ELF file SHA256:  7b3e1afc9...[0m
+[0;32mI (277) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (282) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (287) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (310) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (352) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (366) main_task: Started on CPU0[0m
+[0;32mI (370) main_task: Calling app_main()[0m
+[0;32mI (383) pp: pp rom version: 9387209[0m
+[0;32mI (383) net80211: net80211 rom version: 9387209[0m
+I (385) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (394) wifi:wifi firmware version: 3e0076f
+I (395) wifi:wifi certification version: v7.0
+I (397) wifi:config NVS flash: enabled
+I (401) wifi:config nano formating: disabled
+I (405) wifi:Init data frame dynamic rx buffer num: 32
+I (410) wifi:Init static rx mgmt buffer num: 5
+I (414) wifi:Init management short buffer num: 32
+I (418) wifi:Init dynamic tx buffer num: 128
+I (422) wifi:Init static tx FG buffer num: 2
+I (426) wifi:Init static rx buffer size: 2212
+I (430) wifi:Init static rx buffer num: 10
+I (434) wifi:Init dynamic rx buffer num: 32
+[0;32mI (438) wifi_init: rx ba win: 6[0m
+[0;32mI (442) wifi_init: tcpip mbox: 32[0m
+[0;32mI (446) wifi_init: udp mbox: 6[0m
+[0;32mI (449) wifi_init: tcp mbox: 6[0m
+[0;32mI (453) wifi_init: tcp tx win: 5760[0m
+[0;32mI (457) wifi_init: tcp rx win: 5760[0m
+[0;32mI (461) wifi_init: tcp mss: 1440[0m
+[0;32mI (465) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (470) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (476) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (541) wifi:mode : sta (1a:00:00:00:00:02)
+I (542) wifi:enable tsf
+[0;32mI (545) node: Connecting to Wi-Fi...[0m
+[0;32mI (545) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (547) ESPNOW: espnow [version: 1.0] init
+[0;32mI (1314) node: Received ESP-NOW message from 9e:45:1f:08:31:98 with length 159[0m
+[0;32mI (1339) node: Received ESP-NOW message from 46:8c:4c:2c:54:c5 with length 137[0m
+[0;32mI (2952) node: Disconnected from Wi-Fi, retrying...[0m
+[0;32mI (3692) node: Received ESP-NOW message from 9e:45:1f:08:31:98 with length 231[0m
+[0;32mI (5361) node: Disconnected from Wi-Fi, retrying...[0m
+[0;32mI (6088) node: Received ESP-NOW message from 9e:45:1f:08:31:98 with length 120[0m
+[0;32mI (6103) node: Received ESP-NOW message from 46:8c:4c:2c:54:c5 with length 57[0m
+[0;32mI (6185) node: Received ESP-NOW message from 9e:45:1f:08:31:98 with length 241[0m
+[0;32mI (6202) node: Received ESP-NOW message from 46:8c:4c:2c:54:c5 with length 189[0m
+[0;32mI (7770) node: Disconnected from Wi-Fi, retrying...[0m
+[0;32mI (8555) node: Received ESP-NOW message from 9e:45:1f:08:31:98 with length 29[0m
+[0;32mI (8567) node: Received ESP-NOW message from 46:8c:4c:2c:54:c5 with length 209[0m
+[0;32mI (10179) node: Disconnected from Wi-Fi, retrying...[0m
+I (10186) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (10187) wifi:state: init -> auth (b0)
+I (10189) wifi:state: auth -> assoc (0)
+I (10194) wifi:state: assoc -> run (10)
+I (10209) wifi:connected with your_ssid, aid = 3, channel 11, 40D, bssid = 64:e8:33:89:f9:11
+I (10210) wifi:security: WPA2-PSK, phy: bgn, rssi: -26
+I (10212) wifi:pm start, type: 1
+
+I (10214) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (10223) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (10299) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (10300) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (11232) esp_netif_handlers: sta ip: 192.168.4.4, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (11233) node: Got IP Address: 192.168.4.4[0m
+[0;32mI (11235) node: UDP socket created successfully[0m
+[0;32mI (26803) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 1[0m
+[0;32mI (26804) node: Node 2 enabling CSI to receive from Node 0[0m
+[0;32mI (26917) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27017) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27132) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27234) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27335) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27432) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27536) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27635) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27719) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27817) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (27917) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28017) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28118) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28221) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28317) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28417) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28517) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28617) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28717) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28823) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 10[0m
+[0;32mI (28918) node: Received ESP-NOW message from 1a:00:00:00:00:00 with length 1[0m
+[0;32mI (28918) node: Node 2 received disable CSI command from Node 255[0m

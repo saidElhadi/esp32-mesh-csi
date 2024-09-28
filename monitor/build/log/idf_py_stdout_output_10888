@@ -1,0 +1,909 @@
+[1/259] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_socks_proxy.c.obj
+[2/259] Linking C static library esp-idf\esp_https_ota\libesp_https_ota.a
+[3/259] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Sayid\workspace\Thesis\multi-spin\monitor\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5170 bytes. 0x2e90 bytes (36%) free.
+[4/259] Linking C static library esp-idf\esp_http_server\libesp_http_server.a
+[5/259] No install step for 'bootloader'
+[6/259] Linking C static library esp-idf\esp_http_client\libesp_http_client.a
+[7/259] Completed 'bootloader'
+[8/259] Linking C static library esp-idf\tcp_transport\libtcp_transport.a
+[9/259] Linking C static library esp-idf\esp_gdbstub\libesp_gdbstub.a
+[10/259] Linking C static library esp-idf\esp_eth\libesp_eth.a
+[11/259] Linking C static library esp-idf\esp_adc\libesp_adc.a
+[12/259] Linking C static library esp-idf\esp-tls\libesp-tls.a
+[13/259] Linking C static library esp-idf\http_parser\libhttp_parser.a
+[14/259] Linking C static library esp-idf\esp_wifi\libesp_wifi.a
+[15/259] Linking C static library esp-idf\esp_coex\libesp_coex.a
+[16/259] Linking C static library esp-idf\wpa_supplicant\libwpa_supplicant.a
+[17/259] Linking C static library esp-idf\esp_netif\libesp_netif.a
+[18/259] Linking C static library esp-idf\lwip\liblwip.a
+[19/259] Linking C static library esp-idf\vfs\libvfs.a
+[20/259] Linking C static library esp-idf\esp_phy\libesp_phy.a
+[21/259] Linking C static library esp-idf\nvs_flash\libnvs_flash.a
+[22/259] Linking C static library esp-idf\esp_event\libesp_event.a
+[23/259] Linking C static library esp-idf\esp_timer\libesp_timer.a
+[24/259] Linking C static library esp-idf\esp_common\libesp_common.a
+[25/259] Linking C static library esp-idf\cxx\libcxx.a
+[26/259] Linking C static library esp-idf\newlib\libnewlib.a
+[27/259] Linking C static library esp-idf\freertos\libfreertos.a
+[28/259] Linking C static library esp-idf\esp_hw_support\libesp_hw_support.a
+[29/259] Linking C static library esp-idf\soc\libsoc.a
+[30/259] Linking C static library esp-idf\heap\libheap.a
+[31/259] Linking C static library esp-idf\log\liblog.a
+[32/259] Linking C static library esp-idf\hal\libhal.a
+[33/259] Linking C static library esp-idf\esp_rom\libesp_rom.a
+[34/259] Linking C static library esp-idf\esp_system\libesp_system.a
+[35/259] Linking C static library esp-idf\pthread\libpthread.a
+[36/259] Linking C static library esp-idf\spi_flash\libspi_flash.a
+[37/259] Linking C static library esp-idf\app_update\libapp_update.a
+[38/259] Linking C static library esp-idf\esp_partition\libesp_partition.a
+[39/259] Linking C static library esp-idf\bootloader_support\libbootloader_support.a
+[40/259] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[41/259] Linking C static library esp-idf\esp_bootloader_format\libesp_bootloader_format.a
+[42/259] Linking CXX static library esp-idf\mbedtls\mbedtls\library\libmbedtls.a
+[43/259] Linking CXX static library esp-idf\mbedtls\mbedtls\library\libmbedx509.a
+[44/259] Linking CXX static library esp-idf\mbedtls\mbedtls\library\libmbedcrypto.a
+[45/259] Linking CXX static library esp-idf\mbedtls\mbedtls\3rdparty\p256-m\libp256m.a
+[46/259] Linking CXX static library esp-idf\mbedtls\mbedtls\3rdparty\everest\libeverest.a
+[47/259] Generating x509_crt_bundle
+[48/259] Generating ../../x509_crt_bundle.S
+[49/259] Building ASM object esp-idf/riscv/CMakeFiles/__idf_riscv.dir/vectors.S.obj
+[50/259] Building ASM object esp-idf/riscv/CMakeFiles/__idf_riscv.dir/vectors_intc.S.obj
+[51/259] Building C object esp-idf/riscv/CMakeFiles/__idf_riscv.dir/instruction_decode.c.obj
+[52/259] Building C object esp-idf/riscv/CMakeFiles/__idf_riscv.dir/interrupt.c.obj
+[53/259] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c3/esp_efuse_rtc_calib.c.obj
+[54/259] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c3/esp_efuse_table.c.obj
+[55/259] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32c3/ext_mem_layout.c.obj
+[56/259] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c3/esp_efuse_fields.c.obj
+[57/259] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+[58/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/gpio_glitch_filter_ops.c.obj
+[59/259] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c3/esp_efuse_utility.c.obj
+[60/259] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj
+[61/259] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+[62/259] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache.c.obj
+[63/259] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+[64/259] Building C object esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj
+[65/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/rtc_io.c.obj
+[66/259] Building C object esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/ringbuf.c.obj
+[67/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/spi_bus_lock.c.obj
+[68/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/gpio_pin_glitch_filter.c.obj
+[69/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/dedic_gpio.c.obj
+[70/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj
+[71/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj
+[72/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gptimer/gptimer_priv.c.obj
+[73/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gpio/gpio.c.obj
+[74/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/gptimer/gptimer.c.obj
+[75/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s/i2s_platform.c.obj
+[76/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c_common.c.obj
+[77/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj
+[78/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c_slave.c.obj
+[79/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s/i2s_std.c.obj
+[80/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s/i2s_pdm.c.obj
+[81/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s/i2s_tdm.c.obj
+[82/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt/rmt_common.c.obj
+[83/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2s/i2s_common.c.obj
+[84/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt/rmt_encoder.c.obj
+[85/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj
+[86/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c_master.c.obj
+[87/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj
+[88/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/sdspi/sdspi_crc.c.obj
+[89/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/sigma_delta/sdm.c.obj
+[90/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt/rmt_rx.c.obj
+[91/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj
+[92/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/ledc/ledc.c.obj
+[93/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/rmt/rmt_tx.c.obj
+[94/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/gpspi/spi_common.c.obj
+[95/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/sdspi/sdspi_transaction.c.obj
+[96/259] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_locks.c.obj
+[97/259] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_trace.c.obj
+[98/259] Building ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj
+[99/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/usb_serial_jtag/usb_serial_jtag_connection_monitor.c.obj
+[100/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/gpspi/spi_master.c.obj
+[101/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/sdspi/sdspi_host.c.obj
+[102/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/temperature_sensor/temperature_sensor.c.obj
+[103/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj
+[104/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj
+[105/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/gpspi/spi_slave.c.obj
+[106/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/usb_serial_jtag/usb_serial_jtag.c.obj
+[107/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/spi/gpspi/spi_slave_hd.c.obj
+[108/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj
+[109/259] Building C object esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_impl.c.obj
+[110/259] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj
+[111/259] Building C object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj
+[112/259] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj
+[113/259] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_freertos.c.obj
+[114/259] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_runner.c.obj
+[115/259] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj
+[116/259] Building C object esp-idf/cmock/CMakeFiles/__idf_cmock.dir/CMock/src/cmock.c.obj
+[117/259] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_cache.c.obj
+[118/259] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/port/esp/unity_utils_memory_esp.c.obj
+[119/259] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_memory.c.obj
+[120/259] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_port_esp32.c.obj
+[121/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/split_argv.c.obj
+[122/259] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj
+[123/259] Linking C static library esp-idf\mbedtls\libmbedtls.a
+[124/259] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity/src/unity.c.obj
+[125/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/commands.c.obj
+[126/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dbl.c.obj
+[127/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_cmd.c.obj
+[128/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_end.c.obj
+[129/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_dstr.c.obj
+[130/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_date.c.obj
+[131/259] Linking C static library esp-idf\esp_pm\libesp_pm.a
+[132/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_file.c.obj
+[133/259] Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/uart/uart.c.obj
+[134/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_hashtable.c.obj
+[135/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rem.c.obj
+[136/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/linenoise/linenoise.c.obj
+[137/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_lit.c.obj
+[138/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_str.c.obj
+[139/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_int.c.obj
+[140/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_utils.c.obj
+[141/259] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj
+[142/259] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj
+[143/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/arg_rex.c.obj
+[144/259] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io.c.obj
+[145/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/argtable3/argtable3.c.obj
+[146/259] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_common.c.obj
+[147/259] Linking C static library esp-idf\driver\libdriver.a
+[148/259] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj
+[149/259] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ops.c.obj
+[150/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/constants.pb-c.c.obj
+[151/259] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io_i2c_v1.c.obj
+[152/259] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io_i2c_v2.c.obj
+[153/259] Linking C static library esp-idf\esp_mm\libesp_mm.a
+[154/259] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_st7789.c.obj
+[155/259] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ssd1306.c.obj
+[156/259] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_nt35510.c.obj
+[157/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec0.pb-c.c.obj
+[158/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec1.pb-c.c.obj
+[159/259] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io_spi.c.obj
+[160/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec2.pb-c.c.obj
+[161/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/session.pb-c.c.obj
+[162/259] Linking C static library esp-idf\efuse\libefuse.a
+[163/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/common/protocomm.c.obj
+[164/259] Building C object esp-idf/console/CMakeFiles/__idf_console.dir/esp_console_repl.c.obj
+[165/259] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_crc.c.obj
+[166/259] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_sha.c.obj
+[167/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security0.c.obj
+[168/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_console.c.obj
+[169/259] Linking C static library esp-idf\esp_ringbuf\libesp_ringbuf.a
+[170/259] Building C object esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c/protobuf-c.c.obj
+[171/259] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/proto-c/esp_local_ctrl.pb-c.c.obj
+[172/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp.c.obj
+[173/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp_mpi.c.obj
+[174/259] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_common.c.obj
+[175/259] Linking C static library esp-idf\riscv\libriscv.a
+[176/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security2.c.obj
+[177/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security1.c.obj
+[178/259] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_handler.c.obj
+[179/259] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_transport_httpd.c.obj
+[180/259] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_elf.c.obj
+[181/259] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj
+[182/259] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl.c.obj
+[183/259] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_binary.c.obj
+[184/259] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/crc32.cpp.obj
+[185/259] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_httpd.c.obj
+[186/259] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/Partition.cpp.obj
+[187/259] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/riscv/core_dump_port.c.obj
+[188/259] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_flash.c.obj
+[189/259] Linking C static library esp-idf\app_trace\libapp_trace.a
+[190/259] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/SPI_Flash.cpp.obj
+[191/259] Linking C static library esp-idf\unity\libunity.a
+[192/259] Linking C static library esp-idf\esp_hid\libesp_hid.a
+[193/259] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Safe.cpp.obj
+[194/259] Linking C static library esp-idf\console\libconsole.a
+[195/259] Linking C static library esp-idf\esp_lcd\libesp_lcd.a
+[196/259] Linking C static library esp-idf\protobuf-c\libprotobuf-c.a
+[197/259] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/wear_levelling.cpp.obj
+[198/259] Linking C static library esp-idf\espcoredump\libespcoredump.a
+[199/259] Linking C static library esp-idf\cmock\libcmock.a
+[200/259] Linking C static library esp-idf\protocomm\libprotocomm.a
+[201/259] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Flash.cpp.obj
+[202/259] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_init.c.obj
+[203/259] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_common.c.obj
+[204/259] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_cmd.c.obj
+[205/259] Linking C static library esp-idf\esp_local_ctrl\libesp_local_ctrl.a
+[206/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj
+[207/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj
+[208/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj
+[209/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj
+[210/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj
+[211/259] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_io.c.obj
+[212/259] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_sd.c.obj
+[213/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj
+[214/259] Building C object esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_mmc.c.obj
+[215/259] Building C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON_Utils.c.obj
+[216/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj
+[217/259] Linking C static library esp-idf\sdmmc\libsdmmc.a
+[218/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj
+[219/259] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj
+[220/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj
+[221/259] Building C object esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj
+[222/259] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Perf.cpp.obj
+[223/259] Building C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON.c.obj
+[224/259] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj
+[225/259] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj
+[226/259] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
+[227/259] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
+[228/259] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj
+[229/259] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
+[230/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_config.c.obj
+[231/259] Linking C static library esp-idf\nvs_sec_provider\libnvs_sec_provider.a
+[232/259] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
+[233/259] Linking C static library esp-idf\json\libjson.a
+[234/259] Linking C static library esp-idf\wear_levelling\libwear_levelling.a
+[235/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_ctrl.c.obj
+[236/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_scan.c.obj
+[237/259] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
+[238/259] Linking C static library esp-idf\fatfs\libfatfs.a
+[239/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_constants.pb-c.c.obj
+[240/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_config.pb-c.c.obj
+[241/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_scan.pb-c.c.obj
+[242/259] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj
+[243/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_ctrl.pb-c.c.obj
+[244/259] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
+[245/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/handlers.c.obj
+[246/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_console.c.obj
+[247/259] Linking C static library esp-idf\spiffs\libspiffs.a
+[248/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_softap.c.obj
+[249/259] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj
+[250/259] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/manager.c.obj
+[251/259] Linking C static library esp-idf\mqtt\libmqtt.a
+[252/259] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj 
+ccache C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20230928\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.2-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/Sayid/workspace/Thesis/multi-spin/monitor/build/config -IC:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/newlib/platform_include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/config/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/config/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/config/riscv/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/riscv/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/freertos/esp_additions/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/include/soc -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hw_support/include/soc/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/heap/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/soc/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/soc/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/soc/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/platform_port/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/hal/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_rom/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_rom/include/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_rom/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_common/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/soc -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/include/riscv -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_system/port/include/private -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/riscv/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/lwip/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/lwip/include/apps -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/lwip/include/apps/sntp -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/lwip/lwip/src/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/lwip/port/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/lwip/port/freertos/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/lwip/port/esp32xx/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/lwip/port/esp32xx/include/arch -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/lwip/port/esp32xx/include/sys -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_ringbuf/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/efuse/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/efuse/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_mm/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/deprecated -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/analog_comparator/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/dac/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/gpio/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/gptimer/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2c/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/i2s/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/ledc/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/mcpwm/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/parlio/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/pcnt/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/rmt/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/sdio_slave/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/sigma_delta/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/spi/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/temperature_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/touch_sensor/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/twai/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/uart/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/driver/usb_serial_jtag/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_pm/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/port/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/mbedtls/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/mbedtls/library -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/esp_crt_bundle/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_bootloader_format/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_app_format/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/bootloader_support/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/bootloader_support/bootloader_flash/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_partition/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/app_update/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/spi_flash/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/pthread/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_timer/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/app_trace/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_event/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/nvs_flash/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_phy/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_phy/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/vfs/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_netif/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/wpa_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/wpa_supplicant/port/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/wpa_supplicant/esp_supplicant/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_coex/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_wifi/wifi_apps/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/unity/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/unity/unity/src -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/cmock/CMock/src -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/console -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/http_parser -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp-tls -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp-tls/esp-tls-crypto -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_adc/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_adc/interface -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_adc/esp32c3/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_adc/deprecated/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_eth/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_gdbstub/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_hid/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/tcp_transport/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_http_client/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_http_server/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_https_ota/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_psram/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_lcd/interface -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/protobuf-c/protobuf-c -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/protocomm/include/common -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/protocomm/include/security -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/protocomm/include/transports -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/protocomm/include/crypto/srp6a -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/protocomm/proto-c -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/esp_local_ctrl/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/espcoredump/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/espcoredump/include/port/riscv -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/wear_levelling/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/sdmmc/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/fatfs/diskio -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/fatfs/src -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/fatfs/vfs -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/idf_test/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/idf_test/include/esp32c3 -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/ieee802154/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/json/cJSON -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/mqtt/esp-mqtt/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/nvs_sec_provider/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/spiffs/include -IC:/Espressif/frameworks/esp-idf-v5.2.2/components/wifi_provisioning/include -march=rv32imc_zicsr_zifencei  -fdiagnostics-color=always -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/Sayid/workspace/Thesis/multi-spin/monitor=. -fmacro-prefix-map=C:/Espressif/frameworks/esp-idf-v5.2.2=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\app_main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj -c C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c
+In file included from C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:9:
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c: In function 'wifi_event_handler':
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:49: error: expected ')' before 'MACSTR'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                 ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:436:60: note: to match this '('
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:49: error: expected ')' before 'MACSTR'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                 ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:437:60: note: to match this '('
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:49: error: expected ')' before 'MACSTR'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                 ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:438:60: note: to match this '('
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:1: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      | ^          
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:1: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      | ^          
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:49: error: expected ')' before 'MACSTR'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                 ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:439:60: note: to match this '('
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:1: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      | ^          
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:1: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      | ^          
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:49: error: expected ')' before 'MACSTR'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                 ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:440:60: note: to match this '('
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:29:13: note: in expansion of macro 'ESP_LOGI'
+   29 |             ESP_LOGI(TAG, "Station connected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:28:43: warning: unused variable 'event' [-Wunused-variable]
+   28 |             wifi_event_ap_staconnected_t* event = (wifi_event_ap_staconnected_t*) event_data;
+      |                                           ^~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:52: error: expected ')' before 'MACSTR'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                    ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:436:60: note: to match this '('
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:52: error: expected ')' before 'MACSTR'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                    ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:437:60: note: to match this '('
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:52: error: expected ')' before 'MACSTR'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                    ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:438:60: note: to match this '('
+  438 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:1: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      | ^          
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:1: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      | ^          
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:52: error: expected ')' before 'MACSTR'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                    ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:439:60: note: to match this '('
+  439 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:1: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      | ^          
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:1: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      | ^          
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:52: error: expected ')' before 'MACSTR'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |                                                    ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:88: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:440:60: note: to match this '('
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:291:27: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.2.2/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI(TAG, "Station disconnected: " MACSTR ", AID=%d", MAC2STR(event->mac), event->aid);
+      |             ^~~~~~~~
+C:/Users/Sayid/workspace/Thesis/multi-spin/monitor/main/app_main.c:33:46: warning: unused variable 'event' [-Wunused-variable]
+   33 |             wifi_event_ap_stadisconnected_t* event = (wifi_event_ap_stadisconnected_t*) event_data;
+      |                                              ^~~~~
+cc1.exe: some warnings being treated as errors
+[253/259] Linking C static library esp-idf\wifi_provisioning\libwifi_provisioning.a
+ninja: build stopped: subcommand failed.

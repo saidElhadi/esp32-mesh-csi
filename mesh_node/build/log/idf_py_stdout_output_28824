@@ -1,0 +1,147 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403848b2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (223) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (232) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (244) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (265) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (271) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (282) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (352) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (513) wifi:mode : sta (1a:00:00:00:00:02)
+I (514) wifi:enable tsf
+[0;32mI (517) node: Connecting to Wi-Fi...[0m
+[0;32mI (517) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (519) ESPNOW: espnow [version: 1.0] init
+I (523) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (529) wifi:state: init -> auth (b0)
+I (534) wifi:state: auth -> assoc (0)
+I (539) wifi:Association refused temporarily, comeback time 1500 (TUs)
+I (2078) wifi:state: assoc -> assoc (0)
+I (2085) wifi:state: assoc -> run (10)
+I (2099) wifi:connected with your_ssid, aid = 3, channel 11, 40D, bssid = 64:e8:33:89:f9:11
+I (2099) wifi:security: WPA2-PSK, phy: bgn, rssi: -41
+I (2102) wifi:pm start, type: 1
+
+I (2104) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2112) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (2176) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (2177) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (3122) esp_netif_handlers: sta ip: 192.168.4.4, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (3123) node: Got IP Address: 192.168.4.4[0m
+[0;32mI (3125) node: UDP socket created successfully[0m
+I (119810) wifi:starting SA query procedure with AP(64:e8:33:89:f9:11)
+I (119811) wifi:Send SA Query req with transaction id 5c35
+I (120011) wifi:Send SA Query req with transaction id 5c36
+I (120211) wifi:Send SA Query req with transaction id 5c37
+I (120411) wifi:Send SA Query req with transaction id 5c38
+I (120611) wifi:Send SA Query req with transaction id 5c39
+I (120811) wifi:Send SA Query req with transaction id 5c3a
+I (120835) wifi:No response to 6 SA Queries, reset connection sending disassoc
+I (120835) wifi:state: run -> init (d100)
+I (120836) wifi:pm stop, total sleep time: 0 us / 118732094 us
+
+I (120841) wifi:new:<11,0>, old:<11,2>, ap:<255,255>, sta:<11,2>, prof:1
+[0;32mI (120849) node: Disconnected from Wi-Fi, retrying...[0m
+I (120859) wifi:new:<11,2>, old:<11,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (120860) wifi:state: init -> auth (b0)
+I (120866) wifi:state: auth -> assoc (0)
+I (120874) wifi:state: assoc -> run (10)
+I (120898) wifi:connected with your_ssid, aid = 1, channel 11, 40D, bssid = 64:e8:33:89:f9:11
+I (120899) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (120902) wifi:pm start, type: 1
+
+I (120904) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (120912) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (120987) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (120988) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (121922) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (121923) node: Got IP Address: 192.168.4.2[0m
+I (128491) wifi:state: run -> init (e00)
+I (128492) wifi:pm stop, total sleep time: 0 us / 7587401 us
+
+I (128492) wifi:new:<11,0>, old:<11,2>, ap:<255,255>, sta:<11,2>, prof:1
+[0;32mI (128498) node: Disconnected from Wi-Fi, retrying...[0m
+I (128511) wifi:new:<11,2>, old:<11,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (128513) wifi:state: init -> auth (b0)
+I (128515) wifi:state: auth -> assoc (0)
+I (128522) wifi:state: assoc -> run (10)
+I (128540) wifi:connected with your_ssid, aid = 2, channel 11, 40D, bssid = 64:e8:33:89:f9:11
+I (128540) wifi:security: WPA2-PSK, phy: bgn, rssi: -37
+I (128543) wifi:pm start, type: 1
+
+I (128545) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (128554) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (128583) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (128584) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (129564) esp_netif_handlers: sta ip: 192.168.4.3, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (129565) node: Got IP Address: 192.168.4.3[0m

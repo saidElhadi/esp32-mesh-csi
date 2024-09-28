@@ -1,0 +1,1322 @@
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GPESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42000a34
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (33) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (223) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (232) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (244) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (265) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (271) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (282) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (352) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (517) wifi:mode : sta (1a:00:00:00:00:02)
+I (517) wifi:enable tsf
+[0;32mI (520) node: Connecting to Wi-Fi...[0m
+[0;32mI (521) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (522) ESPNOW: espnow [version: 1.0] init
+I (525) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (532) wifi:state: init -> auth (b0)
+I (537) wifi:state: auth -> assoc (0)
+[0;32mI (546) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (546) node: Node 2 enabling CSI to receive from Node 135[0m
+I (553) wifi:state: assoc -> run (10)
+[0;32mI (558) node: CSI callback invoked, data length: 384, mac: 1a:ff:ff:ff:ff:ff, RSSI: -32[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x0000002c  S7      : 0x00000180  
+S8      : 0x3fca6408  S9      : 0x3fca2794  S10     : 0x00000180  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fca09e0: 0x3c0a4890 0x3c0aaa58 0x3c0af93c 0x4038d5ee 0x3fc93444 0x3c0af93c 0x3fc93b74 0x3c0a2032
+3fca0a00: 0x3fc93454 0x3fca0a14 0x3fc93458 0x3c0a20a8 0x3fc93724 0x00363339 0x00000000 0x65737361
+3fca0a20: 0x66207472 0x656c6961 0x78203a64 0x75657551 0x6e654765 0x63697265 0x646e6553 0x65757120
+3fca0a40: 0x632e6575 0x3633393a 0x78702820 0x75657551 0x00002965 0x00000000 0x3fca9dcc 0x00000000
+3fca0a60: 0x00000000 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x3fc990a8 0x40386298
+3fca0a80: 0x00000000 0x00000040 0x00000000 0x00000000 0x3fc92ff4 0x00000000 0x3fc98000 0x42037cba
+3fca0aa0: 0x00000005 0x00000000 0x3fca9dcc 0x3fca0b3c 0x3c0a4924 0x3c0a4890 0x3c0a4890 0x00000000
+3fca0ac0: 0x00000180 0x3fca2794 0x3fca6408 0x00000180 0x0000002c 0x3fc97948 0x3fce0000 0x3fca0b3c
+3fca0ae0: 0x3c0a4924 0x00000000 0x00000000 0x42000000 0x00000000 0x00000001 0x3fce0000 0x3fca0b78
+3fca0b00: 0x3fca2794 0x00000000 0x00000000 0x40386202 0x3fc97db2 0x00000000 0x00000000 0x00000000
+3fca0b20: 0x00000000 0x00000000 0x00000015 0x42007ec8 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0b40: 0x3fca2794 0x3fca27c4 0x3fca9cdc 0x42007f20 0x000000ff 0x000000ff 0x000000ff 0x000000ff
+3fca0b60: 0xffffffe0 0x3fca9f30 0x00000000 0x42033ed0 0x3fc97db2 0x3fca0c50 0x00000002 0x00000000
+3fca0b80: 0x0008a332 0x00000000 0x00000180 0x00000000 0x00000000 0xf6060000 0xf506f606 0xf505f506
+3fca0ba0: 0xf504f605 0xf604f504 0xf604f504 0xf503f504 0xf502f503 0xf502f502 0xf501f501 0xf500f501
+3fca0bc0: 0xf400f500 0xf400f400 0x0000f400 0xf4fff400 0xf300f300 0xf300f300 0xf300f300 0xf300f300
+3fca0be0: 0xf401f401 0xf401f401 0xf502f502 0xf502f502 0xf502f602 0xf603f603 0xf704f603 0xf805f704
+3fca0c00: 0x00000000 0x00000000 0x00000000 0xc2190000 0xc023c71e 0xcb17cf1a 0xce1bc81e 0xc917c01f
+3fca0c20: 0xc319c31c 0xcc17c60f 0xca0ac70e 0xcb0ac40c 0xc008cc14 0xc30ac50b 0xc504ca05 0xc500c204
+3fca0c40: 0xc900ca02 0xc3f8c5fd 0xc5f9c1fc 0xc2ffbffc 0xc5fcbdf9 0xb7fcb502 0xc0ffbdf4 0xbefdbb00
+3fca0c60: 0xc300beff 0xbf06c901 0xbf0fc707 0xc410c80a 0xc80bc609 0xcb0bc708 0xce11ce0a 0xcf19d116
+3fca0c80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x07080000 0x0d0f0a09 0x0b0a0a0c
+3fca0ca0: 0x0f0f0b0b 0x0e0a110d 0x1214140f 0x150e190f 0x19101b12 0x1a13180e 0x21151a0e 0x20171d10
+3fca0cc0: 0x1e122112 0x2516200f 0x220d200c 0x240c2b12 0x1c13250b 0x1e142213 0x1d151e17 0x1e1a1e12
+3fca0ce0: 0x1e171e1a 0x1b1f181d 0x2224201d 0x2229211c 0x1f2d1d2d 0x1b32222a 0x21351a2d 0x2531202f
+3fca0d00: 0x19382138 0x22361e3d 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fce0000 0x00000007 0x3fca9cdc 0x4206091e
+3fca0da0: 0x00000080 0x3fca0ed0 0x3fca2734 0x00000fff 0x000876f5 0x3fca2fa0 0x3fca63dc 0x00000180
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2fa0 0x4038fd42 0x00000011 0x00000000 0x00000000 0x40383804
+
+
+
+ELF file SHA256: 5edd9e01e
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (518) wifi:mode : sta (1a:00:00:00:00:02)
+I (519) wifi:enable tsf
+[0;32mI (522) node: Connecting to Wi-Fi...[0m
+[0;32mI (523) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (524) ESPNOW: espnow [version: 1.0] init
+I (527) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (534) wifi:state: init -> auth (b0)
+I (540) wifi:state: auth -> assoc (0)
+[0;32mI (551) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (552) node: Node 2 enabling CSI to receive from Node 229[0m
+[0;32mI (555) node: CSI callback invoked, data length: 128, mac: 64:e8:33:89:f9:11, RSSI: -26[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x00000083  S7      : 0x00000080  
+S8      : 0x3fca5b5c  S9      : 0x3fca2794  S10     : 0x00000080  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fca09e0: 0x3c0a4890 0x3c0aaa58 0x3c0af93c 0x4038d5ee 0x3fc93444 0x3c0af93c 0x3fc93b74 0x3c0a2032
+3fca0a00: 0x3fc93454 0x3fca0a14 0x3fc93458 0x3c0a20a8 0x3fc93724 0x00363339 0x00000001 0x65737361
+3fca0a20: 0x66207472 0x656c6961 0x78203a64 0x75657551 0x6e654765 0x63697265 0x646e6553 0x65757120
+3fca0a40: 0x632e6575 0x3633393a 0x78702820 0x75657551 0x00002965 0x00000000 0x00000020 0x4038af48
+3fca0a60: 0x00000000 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x3fc990a8 0x40386298
+3fca0a80: 0x00000000 0x00000000 0x00000020 0x00000000 0x0000080c 0x00000084 0x3fce0000 0x40380a40
+3fca0aa0: 0x00000003 0x00000000 0x3fce0000 0x3fca0b3c 0x3c0a4924 0x3c0a4890 0x3c0a4890 0x00000000
+3fca0ac0: 0x00000080 0x3fca2794 0x3fca5b5c 0x00000080 0x00000083 0x3fc97948 0x3fce0000 0x3fca0b3c
+3fca0ae0: 0x3c0a4924 0x00000000 0x00000000 0x42000000 0x00000000 0x00000000 0x3fce0000 0x3fca0b78
+3fca0b00: 0x3fca2794 0x00000000 0x00000000 0x40386202 0x40386dd0 0x40386e36 0x00000001 0x00000000
+3fca0b20: 0x00000000 0x00000020 0x3fc983c0 0x42007ec8 0x00000000 0x00000000 0x3fc990a8 0x00000000
+3fca0b40: 0x3fca2794 0x3fca27c4 0x3fca92c4 0x42007f20 0x00000033 0x00000089 0x000000f9 0x00000011
+3fca0b60: 0xffffffe6 0x00000154 0x3fc983c0 0x4038af8a 0x42043e18 0x42043e0a 0x00000002 0x00000000
+3fca0b80: 0x00089b25 0x00000000 0x00000080 0x00000000 0x00000000 0xf20f0000 0xf30ff210 0xf40ef30f
+3fca0ba0: 0xf40df40e 0xf50df40d 0xf50cf50c 0xf50bf50b 0xf50af50b 0xf60af60a 0xf509f609 0xf608f609
+3fca0bc0: 0xf608f608 0xf608f608 0x0000f608 0xf707f608 0xf707f708 0xf707f707 0xf807f807 0xf807f807
+3fca0be0: 0xf906f907 0xf906f906 0xf906f906 0xfa06fa06 0xfa06fa06 0xfa06fa06 0xfb07fa06 0xfc07fb07
+3fca0c00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0c20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0c40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0c60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0c80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0ca0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0cc0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0ce0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fc9eddc 0x00000000 0x3fca92c4 0x4206091e
+3fca0da0: 0x3fca0ed4 0x00000004 0x3fca2734 0x00000fff 0x00087ac6 0x3fca2f94 0x3fca5b30 0x00000080
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2f94 0x4038fd42 0x3ff1b000 0x3fce0000 0x00000000 0x00000000
+
+
+
+ELF file SHA256: 5edd9e01e
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048b92
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (522) wifi:mode : sta (1a:00:00:00:00:02)
+I (523) wifi:enable tsf
+[0;32mI (526) node: Connecting to Wi-Fi...[0m
+[0;32mI (526) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (528) ESPNOW: espnow [version: 1.0] init
+I (531) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (538) wifi:state: init -> auth (b0)
+I (542) wifi:state: auth -> assoc (0)
+I (548) wifi:state: assoc -> run (10)
+[0;32mI (551) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (555) node: Node 2 enabling CSI to receive from Node 67[0m
+[0;32mI (566) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (569) node: Node 2 enabling CSI to receive from Node 68[0m
+[0;32mI (575) node: CSI callback invoked, data length: 384, mac: 1a:ff:ff:ff:ff:ff, RSSI: -32[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x0000002c  S7      : 0x00000180  
+S8      : 0x3fca6cb4  S9      : 0x3fca2794  S10     : 0x00000180  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fca09e0: 0x3c0a4890 0x3c0aaa58 0x3c0af93c 0x4038d5ee 0x3fc93444 0x3c0af93c 0x3fc93b74 0x3c0a2032
+3fca0a00: 0x3fc93454 0x3fca0a14 0x3fc93458 0x3c0a20a8 0x3fc93724 0x00363339 0x00000000 0x65737361
+3fca0a20: 0x66207472 0x656c6961 0x78203a64 0x75657551 0x6e654765 0x63697265 0x646e6553 0x65757120
+3fca0a40: 0x632e6575 0x3633393a 0x78702820 0x75657551 0x00002965 0x00000000 0x3fca9dcc 0x00000000
+3fca0a60: 0x00000000 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x3fc990a8 0x40386298
+3fca0a80: 0x00000000 0x00000040 0x00000000 0x00000000 0x3fc92ff4 0x00000040 0x00000000 0x3fca0b90
+3fca0aa0: 0x3fc92ff4 0x00000000 0x3fc98000 0x3fca0b3c 0x3c0a4924 0x3c0a4890 0x3c0a4890 0x00000000
+3fca0ac0: 0x00000180 0x3fca2794 0x3fca6cb4 0x00000180 0x0000002c 0x3fc97948 0x3fce0000 0x3fca0b3c
+3fca0ae0: 0x3c0a4924 0x00000000 0x00000000 0x42000000 0x00000000 0x00000001 0x3fce0000 0x3fca0b78
+3fca0b00: 0x3fca2794 0x00000000 0x00000000 0x40386202 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0b20: 0x00000100 0x00000000 0x00000000 0x42007ec8 0x00000000 0x00000000 0x00000015 0x00000000
+3fca0b40: 0x3fca2794 0x3fca27c4 0x3fca9350 0x42007f20 0x000000ff 0x000000ff 0x000000ff 0x000000ff
+3fca0b60: 0xffffffe0 0x3fca0c60 0x3fca0c48 0x3fca0c4c 0x3fca0c60 0x3fca9cd4 0x00000002 0x00000000
+3fca0b80: 0x0008ebfc 0x00000000 0x00000180 0x00000000 0x00000000 0xf4fc0000 0xf4fcf4fc 0xf4fcf5fc
+3fca0ba0: 0xf5fbf5fc 0xf5fbf5fb 0xf6fbf5fb 0xf6faf6fb 0xf7faf6fa 0xf7f9f6f9 0xf7f9f7f9 0xf7f8f8f8
+3fca0bc0: 0xf7f8f7f8 0xf7f8f7f8 0x0000f8f7 0xf7f7f7f7 0xf7f7f7f7 0xf7f7f8f7 0xf7f7f7f7 0xf6f7f7f7
+3fca0be0: 0xf7f8f7f8 0xf7f9f6f8 0xf7f9f7f9 0xf7faf6f9 0xf7faf7fa 0xf6fbf7fa 0xf6fcf6fb 0xf6fef6fd
+3fca0c00: 0x00000000 0x00000000 0x00000000 0xbaf20000 0xbdf8b4ed 0xbdf6bdf4 0xb5f4b6f4 0xbdf7beef
+3fca0c20: 0xc1eccbf4 0xbfe5c6eb 0xc2f7c9e5 0xcbefc1ea 0xcae5c8eb 0xcce6cde4 0xd2e1cce0 0xcbdbd2dd
+3fca0c40: 0xcaded1d7 0xd2dad0dd 0xc7d3d3d8 0xd0d2ccd6 0xc5d1cbd3 0xceccd7d5 0xd0d8cbd0 0xcbdacfcd
+3fca0c60: 0xc6dacadb 0xcde0c6dd 0xcfe0ccdb 0xd2e2cede 0xcbe9cde5 0xcce8ccea 0xccf3cae7 0xd0fbcefb
+3fca0c80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x040d0000 0x0413040d 0x07110810
+3fca0ca0: 0x07100813 0x071b0210 0x09150b17 0x0e160b1c 0x111c141d 0x0f180723 0x0b1e101c 0x11190d1d
+3fca0cc0: 0x15241221 0x191c1622 0x191e1820 0x13241323 0x13271522 0x131d0f1f 0x0a261024 0x0b261126
+3fca0ce0: 0x0c2e0e21 0x0e261126 0x032cfc2b 0x02260c31 0xfb30042d 0xfe3dfe38 0xfc35ff49 0xfe3ffd3b
+3fca0d00: 0xfd3bfa3d 0xfe3af83f 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fc95c18 0x3fce0000 0x3fca9350 0x4206091e
+3fca0da0: 0x00000000 0x00000000 0x3fca2734 0x00000fff 0x0008bb32 0x3fca2fac 0x3fca6c88 0x00000180
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2fac 0x4038fd42 0x00000000 0x3fc962fc 0x00000000 0x40383354
+
+
+
+ELF file SHA256: 5edd9e01e
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (517) wifi:mode : sta (1a:00:00:00:00:02)
+I (518) wifi:enable tsf
+[0;32mI (520) node: Connecting to Wi-Fi...[0m
+[0;32mI (521) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (523) ESPNOW: espnow [version: 1.0] init
+I (527) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (533) wifi:state: init -> auth (b0)
+I (538) wifi:state: auth -> assoc (0)
+I (543) wifi:state: assoc -> run (10)
+[0;32mI (546) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (550) node: Node 2 enabling CSI to receive from Node 162[0m
+[0;32mI (557) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (564) node: Node 2 enabling CSI to receive from Node 163[0m
+[0;32mI (570) node: CSI callback invoked, data length: 128, mac: 64:e8:33:89:f9:11, RSSI: -26[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x00000119  S7      : 0x00000080  
+S8      : 0x3fca7560  S9      : 0x3fca93b0  S10     : 0x00000080  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2fb8 0x4038fd42 0x3c0bac14 0x00000000 0x00000000 0x4038dc5c
+
+
+
+ELF file SHA256: 5edd9e01e
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (521) wifi:mode : sta (1a:00:00:00:00:02)
+I (521) wifi:enable tsf
+[0;32mI (524) node: Connecting to Wi-Fi...[0m
+[0;32mI (525) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (526) ESPNOW: espnow [version: 1.0] init
+I (529) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (537) wifi:state: init -> auth (b0)
+I (541) wifi:state: auth -> assoc (0)
+I (549) wifi:state: assoc -> run (10)
+[0;32mI (555) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (556) node: Node 2 is now the broadcaster[0m
+[0;32mI (565) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (567) node: Node 2 enabling CSI to receive from Node 3[0m
+I (573) wifi:connected with your_ssid, aid = 2, channel 11, 40D, bssid = 64:e8:33:89:f9:11
+I (581) wifi:security: WPA2-PSK, phy: bgn, rssi: -26
+I (586) wifi:pm start, type: 1
+
+I (588) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (596) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+[0;32mI (604) node: CSI callback invoked, data length: 384, mac: 1a:ff:ff:ff:ff:ff, RSSI: -33[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x0000002c  S7      : 0x00000180  
+S8      : 0x3fca6cb4  S9      : 0x3fca2794  S10     : 0x00000180  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fca09e0: 0x00002710 0x00000020 0x3c0af93c 0x4038d5ee 0x3fc93444 0x3c0af93c 0x3fc93b74 0x3c0a2032
+3fca0a00: 0x3fc93454 0x3fca0a14 0x3fc93458 0x3c0a20a8 0x3fc93724 0x00363339 0xffffffff 0x65737361
+3fca0a20: 0x66207472 0x656c6961 0x78203a64 0x75657551 0x6e654765 0x63697265 0x646e6553 0x65757120
+3fca0a40: 0x632e6575 0x3633393a 0x78702820 0x75657551 0xff002965 0xffffffff 0x00000000 0x4038d614
+3fca0a60: 0x00000020 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x3fc990a8 0x40386298
+3fca0a80: 0x00000020 0x3fc9bfd4 0x00000019 0x00000000 0x00000080 0x3fc9bfd4 0x00000019 0x000000ff
+3fca0aa0: 0x3fc95e94 0x00000000 0x3fc96134 0x3fca0b3c 0x3c0a4924 0x3c0a4890 0x3c0a4890 0x00000000
+3fca0ac0: 0x00000180 0x3fca2794 0x3fca6cb4 0x00000180 0x0000002c 0x3fc97948 0x3fce0000 0x3fca0b3c
+3fca0ae0: 0x3c0a4924 0x00000000 0x00000000 0x42000000 0x00000000 0x000002bc 0x3fce0000 0x3fca0b78
+3fca0b00: 0x3fca2794 0x00000000 0x00000000 0x40386202 0x00000000 0x00000000 0x3fc990a8 0x00000000
+3fca0b20: 0xffffffff 0xffffffff 0xffffffff 0x42007ec8 0x066e8f19 0x00000000 0x3fc990a8 0x00000000
+3fca0b40: 0x3fca2794 0x3fca27c4 0x3fca9d5c 0x42007f20 0x000000ff 0x000000ff 0x000000ff 0x000000ff
+3fca0b60: 0xffffffdf 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x00000002 0x00000000
+3fca0b80: 0x00095d4c 0x00000000 0x00000180 0x00000000 0x00000000 0x0a060000 0x0a050a06 0x09060a06
+3fca0ba0: 0x09060906 0x09060906 0x08070806 0x08070807 0x07080707 0x07080607 0x06080608 0x06080608
+3fca0bc0: 0x05090608 0x05090509 0x00000509 0x050a050a 0x050a050a 0x060a060a 0x0609060a 0x06090609
+3fca0be0: 0x06090609 0x06090609 0x07080608 0x07070607 0x07060707 0x07060706 0x07050706 0x08040804
+3fca0c00: 0x00000000 0x00000000 0x00000000 0x3a040000 0x3a024706 0x4a064202 0x4a034109 0x3e0e3d07
+3fca0c20: 0x44043b09 0x43094205 0x34123f0f 0x37163511 0x37123b15 0x33133a17 0x30193220 0x321c331a
+3fca0c40: 0x3124371f 0x301d3022 0x302c3024 0x372d3027 0x352c3229 0x35263127 0x36233d26 0x38253823
+3fca0c60: 0x35273725 0x391e3923 0x2e16381e 0x3218391e 0x37163514 0x37113511 0x380e3910 0x32063409
+3fca0c80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x01f30000 0xfaeffef1 0xfcebfaf3
+3fca0ca0: 0xf9eefbf0 0xf7edf6e9 0xf8e8f6e6 0xf3eaf5e6 0xeee9f1e7 0xf0ecefe7 0xefe3eee3 0xede7ebe5
+3fca0cc0: 0xe9dfe4df 0xebe0ebe1 0xe8dfe5e4 0xe8dfece1 0xeedde8e6 0xeae0ebe2 0xede0e9de 0xeed8ebdf
+3fca0ce0: 0xf2d9f2db 0xf5d8f3d8 0xfad5f5d2 0xfbd1facd 0xf4cefad3 0xfac8f6d0 0x00c8fdc6 0x01c302c8
+3fca0d00: 0x07bf00c1 0xfec0ffc4 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x3fce0000 0x3fca9d5c 0x4206091e
+3fca0da0: 0x000000d0 0x00000001 0x3fca2734 0x00000fff 0x0008c741 0x3fca2fac 0x3fca6c88 0x00000180
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2fac 0x4038fd42 0x3c0bac14 0x00000000 0x00000000 0x4038dc5c
+
+
+
+ELF file SHA256: 5edd9e01e
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (519) wifi:mode : sta (1a:00:00:00:00:02)
+I (520) wifi:enable tsf
+[0;32mI (522) node: Connecting to Wi-Fi...[0m
+[0;32mI (523) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (525) ESPNOW: espnow [version: 1.0] init
+I (531) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (535) wifi:state: init -> auth (b0)
+[0;32mI (540) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (546) node: Node 2 enabling CSI to receive from Node 99[0m
+I (552) wifi:state: auth -> assoc (0)
+[0;32mI (555) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (563) node: Node 2 enabling CSI to receive from Node 100[0m
+[0;32mI (569) node: CSI callback invoked, data length: 384, mac: 1a:ff:ff:ff:ff:ff, RSSI: -33[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x0000002c  S7      : 0x00000180  
+S8      : 0x3fca5b5c  S9      : 0x3fca2794  S10     : 0x00000180  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fca09e0: 0x3c0a4890 0x3c0aaa58 0x3c0af93c 0x4038d5ee 0x3fc93444 0x3c0af93c 0x3fc93b74 0x3c0a2032
+3fca0a00: 0x3fc93454 0x3fca0a14 0x3fc93458 0x3c0a20a8 0x3fc93724 0x00363339 0x00000001 0x65737361
+3fca0a20: 0x66207472 0x656c6961 0x78203a64 0x75657551 0x6e654765 0x63697265 0x646e6553 0x65757120
+3fca0a40: 0x632e6575 0x3633393a 0x78702820 0x75657551 0x00002965 0x00000000 0x00000020 0x4038af48
+3fca0a60: 0x00000000 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x3fc990a8 0x40386298
+3fca0a80: 0x00000000 0x00000000 0x00000020 0x00000000 0x0000080c 0x00000084 0x3fce0000 0x40380a40
+3fca0aa0: 0x00000003 0x00000000 0x3fce0000 0x3fca0b3c 0x3c0a4924 0x3c0a4890 0x3c0a4890 0x00000000
+3fca0ac0: 0x00000180 0x3fca2794 0x3fca5b5c 0x00000180 0x0000002c 0x3fc97948 0x3fce0000 0x3fca0b3c
+3fca0ae0: 0x3c0a4924 0x00000000 0x00000000 0x42000000 0x00000000 0x00000000 0x3fce0000 0x3fca0b78
+3fca0b00: 0x3fca2794 0x00000000 0x00000000 0x40386202 0x40386dd0 0x40386e36 0x00000001 0x00000000
+3fca0b20: 0x00000000 0x00000020 0x3fc983c0 0x42007ec8 0x00000000 0x00000000 0x3fc990a8 0x00000000
+3fca0b40: 0x3fca2794 0x3fca27c4 0x3fca9420 0x42007f20 0x000000ff 0x000000ff 0x000000ff 0x000000ff
+3fca0b60: 0xffffffdf 0x00000154 0x3fc983c0 0x4038af8a 0x40386dd0 0x40386e36 0x00000002 0x00000000
+3fca0b80: 0x0008d315 0x00000000 0x00000180 0x00000000 0x00000000 0xfef30000 0xfff3fef3 0xfff4fff4
+3fca0ba0: 0x00f3fff4 0x00f4fff4 0x00f400f4 0x01f400f4 0x01f501f4 0x02f502f4 0x03f503f5 0x03f504f5
+3fca0bc0: 0x04f504f5 0x04f504f5 0x000004f5 0x05f405f5 0x05f405f5 0x05f405f5 0x04f405f4 0x04f304f4
+3fca0be0: 0x03f403f4 0x03f503f4 0x03f503f4 0x02f503f5 0x02f502f5 0x01f501f5 0xfff600f5 0xfef6fff6
+3fca0c00: 0x00000000 0x00000000 0x00000000 0x02be0000 0x02c2febb 0x01bc04bd 0x08bc03c3 0x03be05c1
+3fca0c20: 0x07c307c2 0x0bc204c2 0x09c60ac1 0x0cc80cc3 0x0dc311c7 0x15ca15cc 0x17c818c9 0x19ce19cc
+3fca0c40: 0x1fc61fcd 0x20cb1dc9 0x23ca21c7 0x27c720c7 0x24c525cb 0x22ca26cd 0x23c625c6 0x20c125c5
+3fca0c60: 0x1ac71bc4 0x1ac719c1 0x17c91cc5 0x13cf16c5 0x0eca15cb 0x12ca10ca 0x08cc0cc6 0x01ce02ca
+3fca0c80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xf1ff0000 0xeffef003 0xec02f100
+3fca0ca0: 0xed04f104 0xed03ed06 0xe907e70a 0xe80be70a 0xe70ee70a 0xe60ee50c 0xe40ee411 0xe617e511
+3fca0cc0: 0xde16de10 0xe214e214 0xdf15e118 0xde13e417 0xdf15e315 0xdf13e00e 0xdd13e110 0xd912d810
+3fca0ce0: 0xdb0bda0f 0xd908d80c 0xd209d308 0xd205d00b 0xd004d002 0xcb03c407 0xc502c304 0xc300c500
+3fca0d00: 0xc1fcbdfd 0xbcfdc300 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x3fca9420 0x4206091e
+3fca0da0: 0x000000d0 0x3fca0ed0 0x3fca2734 0x00000fff 0x00088ce5 0x3fca2f94 0x3fca5b30 0x00000180
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2f94 0x4038fd42 0x00000011 0x00000000 0x00000000 0x4208fd20
+
+
+
+ELF file SHA256: 5edd9e01e
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (523) wifi:mode : sta (1a:00:00:00:00:02)
+I (523) wifi:enable tsf
+[0;32mI (526) node: Connecting to Wi-Fi...[0m
+[0;32mI (527) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (528) ESPNOW: espnow [version: 1.0] init
+I (532) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (539) wifi:state: init -> auth (b0)
+I (543) wifi:state: auth -> assoc (0)
+I (547) wifi:Association refused temporarily, comeback time 596 (TUs)
+[0;32mI (551) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (559) node: Node 2 enabling CSI to receive from Node 195[0m
+[0;32mI (565) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (573) node: Node 2 enabling CSI to receive from Node 196[0m
+[0;32mI (579) node: CSI callback invoked, data length: 384, mac: 1a:ff:ff:ff:ff:ff, RSSI: -33[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x0000002c  S7      : 0x00000180  
+S8      : 0x3fca6408  S9      : 0x3fca2794  S10     : 0x00000180  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fca09e0: 0x3c0a4890 0x3c0aaa58 0x3c0af93c 0x4038d5ee 0x3fc93444 0x3c0af93c 0x3fc93b74 0x3c0a2032
+3fca0a00: 0x3fc93454 0x3fca0a14 0x3fc93458 0x3c0a20a8 0x3fc93724 0x00363339 0x00000001 0x65737361
+3fca0a20: 0x66207472 0x656c6961 0x78203a64 0x75657551 0x6e654765 0x63697265 0x646e6553 0x65757120
+3fca0a40: 0x632e6575 0x3633393a 0x78702820 0x75657551 0x00002965 0x00000000 0x00000020 0x4038af48
+3fca0a60: 0x00000000 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x3fc990a8 0x40386298
+3fca0a80: 0x4204ce28 0x4204e10e 0x00000020 0x00000000 0x0000080c 0x00000084 0x3fce0000 0x40380a40
+3fca0aa0: 0x00000003 0x00000000 0x3fce0000 0x3fca0b3c 0x3c0a4924 0x3c0a4890 0x3c0a4890 0x00000000
+3fca0ac0: 0x00000180 0x3fca2794 0x3fca6408 0x00000180 0x0000002c 0x3fc97948 0x3fce0000 0x3fca0b3c
+3fca0ae0: 0x3c0a4924 0x00000000 0x00000000 0x42000000 0x00000000 0x00000000 0x3fce0000 0x3fca0b78
+3fca0b00: 0x3fca2794 0x00000000 0x00000000 0x40386202 0x40386dd0 0x40386e36 0x00000001 0x00000000
+3fca0b20: 0x00000000 0x00000000 0x3fc990a8 0x42007ec8 0x00000000 0x00000000 0x3fc990a8 0x00000000
+3fca0b40: 0x3fca2794 0x3fca27c4 0x3fca92c4 0x42007f20 0x000000ff 0x000000ff 0x000000ff 0x000000ff
+3fca0b60: 0xffffffdf 0x00000000 0x3fc990a8 0x3fca0bfc 0x40386dd0 0x40386e36 0x00000002 0x00000000
+3fca0b80: 0x0008fa5d 0x00000000 0x00000180 0x00000000 0x00000000 0x02f30000 0x02f302f4 0x02f402f4
+3fca0ba0: 0x02f402f4 0x03f403f4 0x03f503f4 0x03f503f5 0x04f604f5 0x04f604f5 0x05f605f6 0x06f606f6
+3fca0bc0: 0x07f606f6 0x06f606f6 0x000007f6 0x07f607f6 0x08f607f6 0x08f607f6 0x07f507f5 0x06f407f5
+3fca0be0: 0x06f505f5 0x05f505f5 0x04f505f5 0x04f604f6 0x04f504f6 0x03f503f6 0x01f602f5 0x00f601f5
+3fca0c00: 0x00000000 0x00000000 0x00000000 0xefc20000 0xf4c4f7b5 0xf5b8f7bd 0xf6bbfec0 0xfac1fec3
+3fca0c20: 0xf8befbc3 0x01c2f8c5 0xfcc8fcc1 0x01c4fac3 0x01c906cb 0x0ace10be 0x0ace14c6 0x0fcd0fc7
+3fca0c40: 0x0dc114c9 0x13c211c4 0x17c217c0 0x20c016c3 0x1abf1bcd 0x17c012ca 0x15c317c3 0x15bb1cbd
+3fca0c60: 0x10c00ec6 0x09bd0dbf 0x09c50ec2 0x04cf0fc4 0x09c90cc8 0x08c402c4 0xfdcc01c2 0xf5d2f7cb
+3fca0c80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xf4fe0000 0xee00f501 0xf202f703
+3fca0ca0: 0xf005ee03 0xe907f203 0xe90be909 0xec0eea09 0xe811e611 0xeb0fe313 0xed0fe417 0xde16e916
+3fca0cc0: 0xe81de318 0xe91aeb19 0xe619e417 0xe617e71b 0xe518e817 0xe515e611 0xdd14e310 0xdf19e218
+3fca0ce0: 0xdb14e515 0xdc10d713 0xd80ed116 0xdb09d110 0xcf0dd315 0xcb0dca0e 0xc90eca0f 0xcd0bc714
+3fca0d00: 0xc20bc00a 0xbe0bc90a 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fc92128 0x00000008 0x3fca92c4 0x4206091e
+3fca0da0: 0x000000d0 0x3fca0ed0 0x3fca2734 0x00000fff 0x0008b584 0x3fca2fa0 0x3fca63dc 0x00000180
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2fa0 0x4038fd42 0x00000011 0x00000000 0x00000000 0x4208fd20
+
+
+
+ELF file SHA256: 5edd9e01e
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (519) wifi:mode : sta (1a:00:00:00:00:02)
+I (520) wifi:enable tsf
+[0;32mI (523) node: Connecting to Wi-Fi...[0m
+[0;32mI (523) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (525) ESPNOW: espnow [version: 1.0] init
+I (528) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (535) wifi:state: init -> auth (b0)
+I (540) wifi:state: auth -> assoc (0)
+[0;32mI (542) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (549) node: Node 2 enabling CSI to receive from Node 34[0m
+I (556) wifi:state: assoc -> run (10)
+[0;32mI (560) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (566) node: Node 2 enabling CSI to receive from Node 35[0m
+[0;32mI (572) node: CSI callback invoked, data length: 384, mac: 1a:ff:ff:ff:ff:ff, RSSI: -33[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x0000002c  S7      : 0x00000180  
+S8      : 0x3fca6408  S9      : 0x3fca2538  S10     : 0x00000180  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fca09e0: 0x3c0a4890 0x3c0aaa58 0x3c0af93c 0x4038d5ee 0x3fc93444 0x3c0af93c 0x3fc93b74 0x3c0a2032
+3fca0a00: 0x3fc93454 0x3fca0a14 0x3fc93458 0x3c0a20a8 0x3fc93724 0x00363339 0x00000000 0x65737361
+3fca0a20: 0x66207472 0x656c6961 0x78203a64 0x75657551 0x6e654765 0x63697265 0x646e6553 0x65757120
+3fca0a40: 0x632e6575 0x3633393a 0x78702820 0x75657551 0x00002965 0x00000000 0x3fca9e18 0x00000000
+3fca0a60: 0x00000000 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x3fc990a8 0x40386298
+3fca0a80: 0x00000000 0x00000040 0x00000000 0x00000000 0x3fc92ff4 0x00000000 0x3fc98000 0x42037cba
+3fca0aa0: 0x00000005 0x00000000 0x3fca9e18 0x3fca0b3c 0x3c0a4924 0x3c0a4890 0x3c0a4890 0x00000000
+3fca0ac0: 0x00000180 0x3fca2538 0x3fca6408 0x00000180 0x0000002c 0x3fc97948 0x3fce0000 0x3fca0b3c
+3fca0ae0: 0x3c0a4924 0x00000000 0x00000000 0x42000000 0x00000000 0x00000001 0x3fce0000 0x3fca0b78
+3fca0b00: 0x3fca2538 0x00000000 0x00000000 0x40386202 0x3fc97db2 0x00000000 0x00000000 0x00000000
+3fca0b20: 0x00000000 0x00000000 0x00000015 0x42007ec8 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0b40: 0x3fca2538 0x3fca2568 0x3fca941c 0x42007f20 0x000000ff 0x000000ff 0x000000ff 0x000000ff
+3fca0b60: 0xffffffdf 0x3fca9f5c 0x00000000 0x42033ed0 0x3fc97db2 0x3fca0c50 0x00000002 0x00000000
+3fca0b80: 0x0008e079 0x00000000 0x00000180 0x00000000 0x00000000 0xfdf40000 0xfdf4fdf3 0xfef4fdf4
+3fca0ba0: 0xfef4fef4 0xfef4fef4 0xfff5fff4 0xfff4fff4 0x00f400f5 0x00f400f5 0x01f401f5 0x02f501f5
+3fca0bc0: 0x02f502f4 0x03f503f4 0x000003f4 0x03f403f4 0x03f403f3 0x03f403f3 0x02f302f3 0x02f302f3
+3fca0be0: 0x01f402f4 0x01f301f4 0x00f400f4 0x00f500f5 0xfff5fff5 0xfef5fff5 0xfdf6fef6 0xfcf6fdf6
+3fca0c00: 0x00000000 0x00000000 0x00000000 0xd9c70000 0xd8d0d5c6 0xd6c1d7cb 0xd6c7decb 0xd7c4dacd
+3fca0c20: 0xddc9e0ce 0xdac5dcca 0xe3cddfc8 0xe4c9e6c5 0xedc8e9c3 0xecc9e9c3 0xf5c8efc0 0xf7c7f0c3
+3fca0c40: 0xf6c0f0c0 0xf8c0f5c4 0xfbb8f9bf 0xf9b9f8bb 0xf6b4f8c0 0xf7bbfabf 0xf6bdf3b8 0xf0b5f1ba
+3fca0c60: 0xf2b5f2be 0xf0c2f1ba 0xebc6ebc0 0xecc8eac0 0xe5c7e4c8 0xdec6e3ca 0xe0d1e2c8 0xdad6ddce
+3fca0c80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xf9010000 0xf504f506 0xf608f205
+3fca0ca0: 0xf509f307 0xf20cf20b 0xf20df210 0xf110f50d 0xef15f115 0xf516f417 0xf21aee18 0xf61af61d
+3fca0cc0: 0xf41ef721 0xf11bf51c 0xf622f521 0xf324f81c 0xf123f41d 0xf21ef01a 0xf11cee1e 0xed21ea25
+3fca0ce0: 0xe820ee1e 0xe720e722 0xe31de11e 0xe01fde26 0xda22e11d 0xd725db25 0xd521d425 0xd220cd22
+3fca0d00: 0xce26d021 0xcc1ed026 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fc95c18 0x3fce0000 0x3fca941c 0x4206091e
+3fca0da0: 0x00000088 0x3fca9fcc 0x3fca24d8 0x00000fff 0x0008903f 0x3fca2fa0 0x3fca63dc 0x00000180
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2fa0 0x4038fd42 0x00000000 0x3fc962fc 0x00000000 0x40383354
+
+
+
+ELF file SHA256: 5edd9e01e
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (286) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (291) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (296) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (303) heap_init: At 3FC983C0 len 00027C40 (159 KiB): RAM[0m
+[0;32mI (309) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (316) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (323) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (330) spi_flash: detected chip: generic[0m
+[0;32mI (334) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (351) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (358) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (365) main_task: Started on CPU0[0m
+[0;32mI (369) main_task: Calling app_main()[0m
+[0;32mI (382) pp: pp rom version: 9387209[0m
+[0;32mI (382) net80211: net80211 rom version: 9387209[0m
+I (384) wifi:wifi driver task: 3fca0ed0, prio:23, stack:6656, core=0
+I (393) wifi:wifi firmware version: 3e0076f
+I (394) wifi:wifi certification version: v7.0
+I (396) wifi:config NVS flash: enabled
+I (400) wifi:config nano formating: disabled
+I (404) wifi:Init data frame dynamic rx buffer num: 32
+I (409) wifi:Init static rx mgmt buffer num: 5
+I (413) wifi:Init management short buffer num: 32
+I (417) wifi:Init dynamic tx buffer num: 128
+I (421) wifi:Init static tx FG buffer num: 2
+I (425) wifi:Init static rx buffer size: 2212
+I (429) wifi:Init static rx buffer num: 10
+I (433) wifi:Init dynamic rx buffer num: 32
+[0;32mI (437) wifi_init: rx ba win: 6[0m
+[0;32mI (441) wifi_init: tcpip mbox: 32[0m
+[0;32mI (445) wifi_init: udp mbox: 6[0m
+[0;32mI (448) wifi_init: tcp mbox: 6[0m
+[0;32mI (452) wifi_init: tcp tx win: 5760[0m
+[0;32mI (456) wifi_init: tcp rx win: 5760[0m
+[0;32mI (460) wifi_init: tcp mss: 1440[0m
+[0;32mI (464) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (469) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (475) phy_init: phy_version 1170,f4aea9b,Apr 30 2024,10:49:24[0m
+I (517) wifi:mode : sta (1a:00:00:00:00:02)
+I (518) wifi:enable tsf
+[0;32mI (521) node: Connecting to Wi-Fi...[0m
+[0;32mI (521) node: Assigned MAC address: 1a:00:00:00:00:02[0m
+I (523) ESPNOW: espnow [version: 1.0] init
+I (526) wifi:new:<11,2>, old:<1,0>, ap:<255,255>, sta:<11,2>, prof:1
+I (533) wifi:state: init -> auth (b0)
+[0;32mI (537) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (544) node: Node 2 enabling CSI to receive from Node 129[0m
+I (550) wifi:state: auth -> assoc (0)
+[0;32mI (554) node: Received ESP-NOW message from 1a:ff:ff:ff:ff:ff with length 1[0m
+[0;32mI (561) node: Node 2 enabling CSI to receive from Node 130[0m
+[0;32mI (567) node: CSI callback invoked, data length: 384, mac: 1a:ff:ff:ff:ff:ff, RSSI: -33[0m
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+Core  0 register dump:
+MEPC    : 0x403806d0  RA      : 0x40385c44  SP      : 0x3fca09e0  GP      : 0x3fc92000  
+TP      : 0x3fc80f20  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000091  S1      : 0x00000001  A0      : 0x3fca0a1c  A1      : 0x3fc93725  
+A2      : 0x00000001  A3      : 0x00000029  A4      : 0x00000001  A5      : 0x3fc98000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000009  S3      : 0x3fca0b26  
+S4      : 0x3fc93724  S5      : 0x3fc97948  S6      : 0x0000002c  S7      : 0x00000180  
+S8      : 0x3fca52b0  S9      : 0x3fca2538  S10     : 0x00000180  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fca09e0: 0x3c0a4890 0x3c0aaa58 0x3c0af93c 0x4038d5ee 0x3fc93444 0x3c0af93c 0x3fc93b74 0x3c0a2032
+3fca0a00: 0x3fc93454 0x3fca0a14 0x3fc93458 0x3c0a20a8 0x3fc93724 0x00363339 0x00000001 0x65737361
+3fca0a20: 0x66207472 0x656c6961 0x78203a64 0x75657551 0x6e654765 0x63697265 0x646e6553 0x65757120
+3fca0a40: 0x632e6575 0x3633393a 0x78702820 0x75657551 0x00002965 0x00000000 0x00000020 0x4038af48
+3fca0a60: 0x00000000 0x00000000 0x3fc990a8 0x40385d14 0x00000000 0x00000000 0x3fc990a8 0x40386298
+3fca0a80: 0x00000000 0x00000000 0x00000020 0x00000000 0x0000080c 0x00000084 0x3fce0000 0x40380a40
+3fca0aa0: 0x00000003 0x00000000 0x3fce0000 0x3fca0b3c 0x3c0a4924 0x3c0a4890 0x3c0a4890 0x00000000
+3fca0ac0: 0x00000180 0x3fca2538 0x3fca52b0 0x00000180 0x0000002c 0x3fc97948 0x3fce0000 0x3fca0b3c
+3fca0ae0: 0x3c0a4924 0x00000000 0x00000000 0x42000000 0x00000000 0x00000000 0x3fce0000 0x3fca0b78
+3fca0b00: 0x3fca2538 0x00000000 0x00000000 0x40386202 0x40386dd0 0x40386e36 0x00000001 0x00000000
+3fca0b20: 0x00000000 0x00000020 0x3fc983c0 0x42007ec8 0x00000000 0x00000000 0x3fc990a8 0x00000000
+3fca0b40: 0x3fca2538 0x3fca2568 0x3fca941c 0x42007f20 0x000000ff 0x000000ff 0x000000ff 0x000000ff
+3fca0b60: 0xffffffdf 0x00000154 0x3fc983c0 0x4038af8a 0x40386dd0 0x40386e36 0x00000002 0x00000000
+3fca0b80: 0x0008cd43 0x00000000 0x00000180 0x00000000 0x00000000 0xf8f60000 0xf8f6f8f6 0xf9f6f9f6
+3fca0ba0: 0xf9f6f9f6 0xfaf6f9f6 0xfaf6faf5 0xfbf5faf6 0xfcf5fbf5 0xfcf5fcf5 0xfdf5fdf5 0xfdf4fdf5
+3fca0bc0: 0xfef4fdf4 0xfef4fef4 0x0000fef4 0xfef3fef3 0xfef3fff3 0xfef3fff3 0xfef3fef3 0xfef3fef3
+3fca0be0: 0xfdf3fdf3 0xfdf4fdf3 0xfcf4fdf4 0xfcf5fcf4 0xfcf5fcf5 0xfbf5fbf5 0xfaf6fbf6 0xf9f7faf7
+3fca0c00: 0x00000000 0x00000000 0x00000000 0xcbdf0000 0xcadec6d6 0xc7d9cbdd 0xc7d5cddb 0xcad9ceda
+3fca0c20: 0xd1dad4d6 0xd2d3d4db 0xd6d4d2d5 0xd8d2d1d0 0xd9d4d4d2 0xddd2d8cc 0xe2cddccd 0xe2cbdeca
+3fca0c40: 0xe6c6e9c4 0xe6c5e5ca 0xe7bce4c3 0xe7bbe4bf 0xe5bce8c4 0xeabeecc3 0xe3bce3bb 0xddbfe3bf
+3fca0c60: 0xe3c0dfc4 0xdfc4dfc4 0xdfc8e2c2 0xe0d1dcc6 0xd8d0e2d0 0xdbd0decf 0xd4d6d6cf 0xd1dfd6d8
+3fca0c80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xfc060000 0xfc08fe03 0xfd0afd07
+3fca0ca0: 0xff0cfc0a 0xfb0dff0e 0xfe11010f 0x0013ff15 0xff13fd16 0xfe16ff18 0xfe19021c 0x001c011a
+3fca0cc0: 0x0520051b 0x081d041e 0x03210b1d 0x01220621 0x071c031e 0xfa1d001d 0x01200120 0xfc23fa22
+3fca0ce0: 0xf824fa1f 0xf823f728 0xef25f227 0xf025f32b 0xec2aef26 0xea31eb2f 0xe62ae62d 0xe42fe42e
+3fca0d00: 0xe132e031 0xe133e133 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d20: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d40: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d60: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fca0d80: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fca9300 0x0001f000 0x3fca941c 0x4206091e
+3fca0da0: 0x00000000 0xffffc03f 0x3fca24d8 0x00000fff 0x00088439 0x3fca2f88 0x3fca5284 0x00000180
+3fca0dc0: 0x00000001 0x3fc92898 0x3fca2f88 0x4038fd42 0x3fca92c4 0x3fcdf234 0x00000000 0x4206265e
+
+
+
+ELF file SHA256: 5edd9e01e
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403806bc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 25 2024 14:00:53[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=200a0h (131232) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000300c8 vaddr=3fc91800 size=02ab0h ( 10928) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00032b80 vaddr=40380000 size=0d498h ( 54424) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=91210h (594448) map[0m
+[0;32mI (222) esp_image: segment 4: paddr=000d1238 vaddr=4038d498 size=04328h ( 17192) load[0m
+[0;32mI (231) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (243) cpu_start: Unicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) cpu_start: Application information:[0m
+[0;32mI (255) cpu_start: Project name:     mesh_node[0m
+[0;32mI (260) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Sep 25 2024 14:00:26[0m
+[0;32mI (271) cpu_start: ELF file SHA256:  5edd9e01e...[0m
+[0;32mI (276) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (281) cpu_start: Min chip rev:     v0.3[0m
